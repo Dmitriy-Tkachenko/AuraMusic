@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">AuraMusic</string>
+    <string name="alert_title">Внимание!</string>
+    <string name="alert_btn_close">Закрыть</string>
+    <string name="alert_btn_continue">Продолжить</string>
+    <string name="alert_read_external_storage_permission">Чтобы пользоваться приложением,
+        Вам необходимо предоставить разрешение на доступ к файловой системе. Это нужно для того,
+        чтобы приложение могло отображать список Ваших музыкальных файлов.</string>
 </resources>

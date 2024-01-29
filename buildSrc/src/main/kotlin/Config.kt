@@ -11,4 +11,5 @@ object Config {
     const val testInstrumentRunner = "androidx.test.runner.AndroidJUnitRunner"
 
     const val jvmTarget = "17"
+    const val jvmToolchain = 17
 }

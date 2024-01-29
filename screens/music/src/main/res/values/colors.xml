@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="white_transparent_80">#CCFFFFFF</color>
+
+    <color name="text_primary">@color/white</color>
+    <color name="text_secondary">@color/white_transparent_80</color>
+</resources>
