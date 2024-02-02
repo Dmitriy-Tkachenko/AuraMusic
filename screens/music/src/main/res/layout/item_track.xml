@@ -2,8 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginBottom="10dp">
+    android:layout_height="wrap_content">
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/image"
@@ -24,27 +23,24 @@
             android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_medium"
-            android:textColor="@color/text_primary"
             android:textSize="@dimen/track_name_size"
+            style="@style/PrimaryTextView.SemiBold"
             tools:text="Take care of you"/>
 
         <TextView
             android:id="@+id/artist"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_regular"
-            android:textColor="@color/text_secondary"
             android:textSize="@dimen/artist_name_size"
+            style="@style/SecondaryTextView.Medium"
             tools:text="Admina Thembi"/>
 
         <TextView
             android:id="@+id/duration"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_regular"
-            android:textColor="@color/text_secondary"
             android:textSize="@dimen/track_time_size"
+            style="@style/SecondaryTextView.Regular"
             tools:text="03:24"/>
 
     </LinearLayout>

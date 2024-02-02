@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="tracks">Tracks</string>
+    <string name="tracks">Треки</string>
+    <string name="loading_error">Ошибка обнаружения музыки</string>
+    <string name="loading_empty">Музыка не обнаружена</string>
 </resources>

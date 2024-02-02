@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- fragment_music -->
-    <dimen name="main_ll_music_padding_hor">20dp</dimen>
+    <dimen name="rv_tracks_padding_top">8dp</dimen>
+    <dimen name="rv_tracks_padding_hor">20dp</dimen>
+    <dimen name="tv_tracks_margin_top">20dp</dimen>
+    <dimen name="tv_tracks_margin_bottom">4dp</dimen>
+    <dimen name="tv_tracks_margin_start">20dp</dimen>
     <dimen name="tracks_size">16sp</dimen>
 
     <!-- item_tracks -->
@@ -11,4 +15,7 @@
     <dimen name="track_name_size">14sp</dimen>
     <dimen name="artist_name_size">12sp</dimen>
     <dimen name="track_time_size">10sp</dimen>
+
+    <!-- TrackItemDecoration -->
+    <dimen name="space_vert">10dp</dimen>
 </resources>

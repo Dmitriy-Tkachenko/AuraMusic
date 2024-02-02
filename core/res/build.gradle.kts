@@ -10,3 +10,7 @@ android {
         minSdk = Config.minSdkVersion
     }
 }
+
+dependencies {
+    implementation(Dependencies.Google.material)
+}

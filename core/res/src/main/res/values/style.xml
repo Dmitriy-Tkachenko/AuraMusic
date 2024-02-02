@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.AuraMusic" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/bg_primary</item>
+        <item name="android:statusBarColor">@color/bg_primary</item>
+    </style>
+
+    <style name="PrimaryTextView" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="PrimaryTextView.Regular" parent="PrimaryTextView">
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+    </style>
+
+    <style name="PrimaryTextView.Medium" parent="PrimaryTextView">
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+    </style>
+
+    <style name="PrimaryTextView.SemiBold" parent="PrimaryTextView">
+        <item name="android:fontFamily">@font/montserrat_semibold</item>
+    </style>
+
+    <style name="PrimaryTextView.Bold" parent="PrimaryTextView">
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+    </style>
+
+    <style name="SecondaryTextView" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="SecondaryTextView.Regular" parent="SecondaryTextView">
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+    </style>
+
+    <style name="SecondaryTextView.Medium" parent="SecondaryTextView">
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+    </style>
+
+    <style name="SecondaryTextView.SemiBold" parent="SecondaryTextView">
+        <item name="android:fontFamily">@font/montserrat_semibold</item>
+    </style>
+
+    <style name="SecondaryTextView.Bold" parent="SecondaryTextView">
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+    </style>
+
+
+    <style name="ShapeAppearanceOverlay.App.CornerSize5dp" parent="">
+        <item name="cornerSize">5dp</item>
+    </style>
+
+</resources>

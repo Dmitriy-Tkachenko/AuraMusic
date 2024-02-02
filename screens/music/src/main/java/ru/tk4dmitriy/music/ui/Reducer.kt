@@ -9,12 +9,12 @@ class Reducer : DslReducer<Event, State, Effect, Command>() {
             state { copy(loading = false, data = event.data) }
         }
         is Event.Internal.LoadingError -> {
-            state { copy(loading = false) }
+            state { copy(loading = false, error = event.throwable) }
         }
         Event.Ui.Init -> {
           if (state == State()) {
-                state { copy(loading = true) }
-                commands { +Command.LoadMusic }
+              state { copy(loading = true) }
+              commands { +Command.LoadMusic }
           } else { }
         }
     }

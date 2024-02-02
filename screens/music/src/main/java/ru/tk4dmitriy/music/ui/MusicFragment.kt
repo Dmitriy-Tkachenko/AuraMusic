@@ -6,12 +6,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
+import ru.tk4dmitriy.music.ui.utils.TrackItemDecoration
+import ru.tk4dmitriy.screens.music.R
 import ru.tk4dmitriy.screens.music.State
 import ru.tk4dmitriy.screens.music.di.MusicComponentHolder
 import ru.tk4dmitriy.screens.music.databinding.FragmentMusicBinding
 import vivid.money.elmslie.android.base.ElmFragment
 import vivid.money.elmslie.core.store.Store
 import javax.inject.Inject
+import kotlin.random.Random
 
 class MusicFragment : ElmFragment<Event, Effect, State>() {
     private lateinit var binding: FragmentMusicBinding
@@ -34,6 +37,7 @@ class MusicFragment : ElmFragment<Event, Effect, State>() {
         binding.rvTracks.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
             adapter = this@MusicFragment.adapter
+            addItemDecoration(TrackItemDecoration())
         }
         return binding.root
     }
@@ -46,12 +50,30 @@ class MusicFragment : ElmFragment<Event, Effect, State>() {
     }
 
     override fun render(state: State) {
-        if (state.loading) binding.progress.visibility = View.VISIBLE
-        else if (state.error != null) Log.d("MusicFragment", state.error.message.toString())
+        if (state.loading)
+        else if (state.error != null) stateErrorViewsVisibility()
+        else if (state.data.isEmpty()) stateSuccessEmptyViewsVisibility()
         else {
-            binding.progress.visibility = View.INVISIBLE
-            binding.frameLayout.visibility = View.GONE
+            stateSuccessViewsVisibility()
             adapter.submitList(state.data)
         }
+    }
+
+    private fun stateErrorViewsVisibility() {
+        binding.llTracks.visibility = View.GONE
+        binding.tvEmpty.visibility = View.GONE
+        binding.tvError.visibility = View.VISIBLE
+    }
+
+    private fun stateSuccessEmptyViewsVisibility() {
+        binding.llTracks.visibility = View.GONE
+        binding.tvError.visibility = View.GONE
+        binding.tvEmpty.visibility = View.VISIBLE
+    }
+
+    private fun stateSuccessViewsVisibility() {
+        binding.tvEmpty.visibility = View.GONE
+        binding.tvError.visibility = View.GONE
+        binding.llTracks.visibility = View.VISIBLE
     }
 }

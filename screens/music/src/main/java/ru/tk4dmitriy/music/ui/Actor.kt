@@ -13,8 +13,7 @@ class Actor @Inject constructor(
     override fun execute(command: Command): Flow<Event> = when (command) {
         is Command.LoadMusic -> {
             flow {
-                val data = loadMusicUseCase()
-                data.collect { music ->
+                loadMusicUseCase().collect { music ->
                     val itemStates: MutableList<ItemState> = mutableListOf()
                     music.forEach {
                         itemStates.add(
