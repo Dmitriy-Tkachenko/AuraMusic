@@ -7,7 +7,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import ru.tk4dmitriy.auramusic.databinding.ActivityMainBinding
-import ru.tk4dmitriy.screens.music.MusicScreenApi
+import ru.tk4dmitriy.screens.music.api.MusicScreenApi
 import ru.tk4dmitriy.screens.music.ui.MusicFragment
 import javax.inject.Inject
 import javax.inject.Provider

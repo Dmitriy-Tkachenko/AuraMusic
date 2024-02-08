@@ -42,6 +42,7 @@ dependencies {
     implementation(project(Modules.moduleInjector))
     implementation(project(Modules.Core.res))
     implementation(project(Modules.Features.musicApi))
+    implementation(project(Modules.Features.thumbnailApi))
 
     implementation(Dependencies.AndroidX.core)
     implementation(Dependencies.AndroidX.appcompat)

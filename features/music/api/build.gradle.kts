@@ -11,9 +11,3 @@ java {
 kotlin {
     jvmToolchain(Config.jvmToolchain)
 }
-
-dependencies {
-    implementation(project(Modules.moduleInjector))
-
-    implementation(Dependencies.Jetbrains.coroutinesCore)
-}

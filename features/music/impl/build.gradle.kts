@@ -17,6 +17,5 @@ dependencies {
     implementation(project(Modules.Data.musicApi))
     implementation(project(Modules.moduleInjector))
 
-    implementation(Dependencies.Jetbrains.coroutinesCore)
     implementation(Dependencies.Javax.inject)
 }

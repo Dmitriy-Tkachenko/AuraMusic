@@ -35,9 +35,9 @@ android {
 
 dependencies {
     implementation(project(Modules.Data.musicApi))
+    implementation(project(Modules.Core.utils))
 
     implementation(Dependencies.AndroidX.core)
-    implementation(Dependencies.Jetbrains.coroutinesCore)
     implementation(Dependencies.Google.dagger)
     kapt(Dependencies.Google.daggerCompiler)
 

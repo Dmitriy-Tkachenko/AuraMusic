@@ -46,8 +46,12 @@ dependencies {
     implementation(project(Modules.Screens.music))
     implementation(project(Modules.Features.musicApi))
     implementation(project(Modules.Features.musicImpl))
+    implementation(project(Modules.Features.thumbnailApi))
+    implementation(project(Modules.Features.thumbnailImpl))
     implementation(project(Modules.Data.musicApi))
     implementation(project(Modules.Data.musicImpl))
+    implementation(project(Modules.Data.thumbnailApi))
+    implementation(project(Modules.Data.thumbnailImpl))
 
     implementation(Dependencies.AndroidX.core)
     implementation(Dependencies.AndroidX.appcompat)
@@ -60,7 +64,6 @@ dependencies {
     implementation(Dependencies.Github.elmslieCore)
     implementation(Dependencies.Github.elmslieAndroid)
     implementation(Dependencies.Github.elmslieCoroutines)
-
 
     testImplementation(Dependencies.Test.junit)
     androidTestImplementation(Dependencies.Test.junitExt)

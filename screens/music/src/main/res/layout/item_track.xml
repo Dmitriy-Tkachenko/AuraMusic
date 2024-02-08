@@ -5,7 +5,7 @@
     android:layout_height="wrap_content">
 
     <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/image"
+        android:id="@+id/thumb"
         android:layout_width="@dimen/track_img_wh"
         android:layout_height="@dimen/track_img_wh"
         android:theme="@style/ShapeAppearanceOverlay.App.CornerSize5dp"
